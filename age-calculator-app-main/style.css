@@ -69,3 +69,17 @@ span{
     color: hsl(0, 100%, 67%);
 }
 
+@media (max-width: 680px){
+    .contents{
+        scale: 0.8;
+    }
+    button{
+        position: relative;
+        top:50px;
+        left: 40%;
+        padding: 10px;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: hsl(259, 100%, 65%);
+}
+}
