@@ -93,4 +93,20 @@ h2{
         display: flex;
         flex-direction: column;
     }
+    .results{
+        text-align: center;
+        width: 84%;
+        padding: 0% 8%;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 7%;
+        padding-bottom: 3%;
+    
+    }
+    
+    .summary{
+        list-style-type: none;
+        width: 90%;
+        padding: 0% 5%;
+        
+    }
 }
