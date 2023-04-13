@@ -12,39 +12,26 @@ body{
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 84px 7px rgba(48,59,90,0.75);
+    padding: 0;
 }
 
 .results{
     text-align: center;
-    width: 50%;
-    padding: 0% 8%;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 7%;
     padding-bottom: 3%;
-
+    padding: 3%;
 }
 
 .summary{
-    list-style-type: none;
-    width: 50%;
     padding: 0% 5%;
-    
+    width: 50%;
 }
 
-h3,p{
-    display: inline;
+.summary-items > p{
+    margin: auto;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0px;
-}
-
-li{
-    display: flex;
-    margin: 3%;
-    border-radius: 20px;
-}
 
 img{
     margin-left: 14px;
@@ -57,10 +44,9 @@ h3{
     font-size: 18px;
 }
 
-p{
-    width: 50%;
-    text-align: center;
-    margin-top: 8%;
+.summary-items{
+    margin: 10px 0;
+    border-radius: 20px;
 }
 
 h2{
@@ -69,23 +55,26 @@ h2{
 
 .score{
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 50%;
-    padding: 8%;
-    padding-top: 5%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin-left: 15%;
+    margin: auto;
+    overflow: auto;
 }
 
 .continue{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 0;
     background-color: hsl(224, 30%, 27%);
-    display: block;
-    margin: auto;
-    color: hsl(0, 0%, 100%);
-    padding: 3% 30%;
-    margin-bottom: 25px;
-    border-radius: 30px;
+    color: white;
+    padding: 4%;
+    border-radius: 20px;
+}
+
+.summary-items{
+    display: flex;
+    flex-direction: 
 }
 
 @media (max-width: 768px) {
@@ -93,20 +82,7 @@ h2{
         display: flex;
         flex-direction: column;
     }
-    .results{
-        text-align: center;
-        width: 84%;
-        padding: 0% 8%;
-        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-        border-radius: 7%;
-        padding-bottom: 3%;
-    
-    }
-    
     .summary{
-        list-style-type: none;
-        width: 90%;
-        padding: 0% 5%;
-        
+        width: auto;
     }
 }

@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="app.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <section class="with_footer">
-  <section class="content">
-  <section class="results">
-    <h1 style="font-size: 22px; color:hsl(241, 100%, 89%)">Your Result</h1>
-    <div class="score">
-      <h2 style="font-size: 60px; margin-bottom: 2%; margin-top: 20%; color: white;">76</h2>
-      <p style="color:hsl(241, 100%, 89%)">of 100</p>
-    </div>
-    <h2 style="color: white">Great</h2>
-    <p style="color: hsl(221, 100%, 96%);">You scored higher than 65% of the people who have taken these tests.</p>
-  </section>
-  <section class="summary">
-    <h1 style="font-weight: 800; font-size: 22px;">Summary</h1>
-    <ul style="font-size: 18px;">
-      <li style="background-color: hsla(0, 100%, 67%, 0.2)">
-        <img src="assets/images/icon-reaction.svg" alt="Icon of Reaction">
-        <h3>Reaction</h3>
-        <p>80/100</p>
-      </li>
-      <li style="background-color: hsla(39, 100%, 56%, 0.2);">
-        <img src="assets/images/icon-memory.svg" alt="Icon of Memory">
-        <h3>Memory</h3>
-        <p>92/100</p>
-      </li>
-      <li style="background-color: hsla(166, 100%, 37%, 0.2);">
-        <img src="assets/images/icon-verbal.svg" alt="Icon of Verbal">
-        <h3>Verbal</h3>
-        <p>72/100</p>
-      </li>
-      <li style="background-color: hsla(234, 85%, 45%, 0.2);">
-        <img src="assets/images/icon-visual.svg" alt="Icon of Visual">
-        <h3>Visual</h3>
-        <p>72/100</p>
-      </li>
-    </ul>
-    <button class="continue">Continue</button>
-  </section>
-  </section>
-  <div class="attribution" style="margin-top: 2%;">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/sidarth-23">Sidarth</a>.
-  </div>
-</section>
-</body>
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="with_footer">
+      <section class="content">
+        <section class="results">
+          <h1
+            class="result heading"
+            style="font-size: 22px; color: hsl(241, 100%, 89%)"
+          >
+            Your Result
+          </h1>
+          <div class="score">
+            <h2
+              style="
+                font-size: 60px;
+                margin-bottom: 2%;
+                margin-top: 20%;
+                color: white;
+              "
+            >
+              76
+            </h2>
+            <p style="color: hsl(241, 100%, 89%)">of 100</p>
+          </div>
+          <h2 style="color: white">Great</h2>
+          <p style="color: hsl(221, 100%, 96%)">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        <section class="summary">
+          <h1 style="font-weight: 800; font-size: 22px">Summary</h1>
+          <div
+            class="summary-items"
+            style="background-color: hsla(0, 100%, 67%, 0.2); color: hsl(0, 100%, 67%);"
+          >
+            <img src="assets/images/icon-reaction.svg" alt="Icon of Reaction" />
+            <h3>Reaction</h3>
+            <p>80/100</p>
+          </div>
+          <div
+            style="background-color: hsla(39, 100%, 56%, 0.2); color: hsl(39, 100%, 56%);"
+            class="summary-items"
+          >
+            <img src="assets/images/icon-memory.svg" alt="Icon of Memory" />
+            <h3>Memory</h3>
+            <p>92/100</p>
+          </div>
+          <div
+            style="background-color: hsla(166, 100%, 37%, 0.2); color: hsl(166, 100%, 37%);"
+            class="summary-items"
+          >
+            <img src="assets/images/icon-verbal.svg" alt="Icon of Verbal" />
+            <h3>Verbal</h3>
+            <p>61/100</p>
+          </div>
+          <div
+            class="summary-items"
+            style="background-color: hsla(234, 85%, 45%, 0.2); color: hsl(234, 85%, 45%);"
+          >
+            <img src="assets/images/icon-visual.svg" alt="Icon of Visual" />
+            <h3>Visual</h3>
+            <p>72/100</p>
+          </div>
+          <div class="continue">Continue</button>
+        </section>
+      </section>
+      <div class="attribution" style="margin-top: 2%">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/sidarth-23">Sidarth</a>.
+      </div>
+    </section>
+  </body>
 </html>
