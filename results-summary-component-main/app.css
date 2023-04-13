@@ -18,7 +18,7 @@ body{
 .results{
     text-align: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 7%;
+    border-radius: 30px;
     padding-bottom: 3%;
     padding: 3%;
 }
@@ -78,6 +78,9 @@ h2{
 }
 
 @media (max-width: 768px) {
+    .with_footer{
+        margin-top: 50px;
+    }
     .content{
         display: flex;
         flex-direction: column;
